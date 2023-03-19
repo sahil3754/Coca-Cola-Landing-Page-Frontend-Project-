@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', cursive;
+    color: #fff;
+}
+
+html,body{
+ height: 100%;
+ width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+.nav{
+    height: 130px;
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-part2{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+.nav h1{
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+
+.nav i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.nav h5{
+    font-size: 14px;
+    
+}
+
+.nav img{
+    height: 45px;
+}
+
+.line{
+    width: 60px;
+    height: 1.6px;
+    background-color: red;
+}
+
+#content{
+    width: 100%;
+    height: calc(100% - 130px);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.left{
+    width: 36%;
+    height: 100%;
+    /* background-color: red; */
+    padding: 100px 80px;
+}
+
+
+
+.left h1{
+    font-size: 52px;
+    
+}
+
+.left span{
+    color: red;
+    font-weight: 100;
+}
+
+.left p{
+    margin-top: 35px;
+    font-size: 15px;
+    
+}
+
+.left button{
+    background-color: red;
+    padding: 16px 40px;
+    border-radius: 50px;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    
+    
+}
+
+.left button i{
+    margin-right: 5px;
+    
+}
+
+.left-btn{
+    display: flex;
+    align-items: center;
+    
+}
+
+.left-btn> i{
+    font-size: 20px;
+    color: red;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+
+
+.center{
+    width: 26%;
+    height: 100%;
+    
+    padding-top: 50px;
+}
+
+.center-bg{
+    width: 100%;
+    height: 88%;
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
+    background-image: url("https://c0.wallpaperflare.com/preview/85/135/782/coca-cola-led-signage-thumbnail.jpg");
+    background-size: 450%;
+    background-position: 30% 40%;
+    filter: blur(2.5px);
+}
+
+
+#content>img{
+    
+    height: 100%;
+    position: absolute;
+    left: 49%;
+    transform: translate(-50%,0);
+}
+
+.right{
+    width: 36%;
+    height: 100%;
+    padding: 200px 100px;
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    border-bottom: 1px solid #ffffff54;
+    line-height: 50px;
+}
+
+.elem h1{
+    font-size: 20px;
+    /* color: #a7a6a6; */
+}
+.elem i{
+    /* color: #4e4e4e; */
+    font-weight: 600;
+}
+
+.elem1{
+    margin-top: 5px;
+}
+.elem1 h1{
+    
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 100;
+}
+
+.elem1 p{
+    /* color: #4e4e4e; */
+    font-size: 13px;
+}
+
+
+.float-btn{
+    position: absolute;
+    height: 10%;
+    width: 11%;
+    background-color: rgba(42, 2, 0, 0.904);
+    left: 59%;
+    top: 30%;
+    transform: translate(10%,0);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    
+    
+   
+}
+
+.float-btn img{
+    height: 41px;
+    border-radius: 50px;
+    margin-left: 5px;
+   
+    
+}
+
+.float-data{
+    margin-left: 8px;
+}
+.float-data h1{
+    font-size: 12px;
+    /* color: #000; */
+
+}
+
+.float-data h6{
+   font-size: 10px;
+   color: #c2ae7e;
+}
+
+.animate__animated.animate__bounce {
+    --animate-duration: 3s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 10s;
+    --animate-delay: 0.6s;
+   
+}
+
+
+
+/* for mobile */
+
+
+@media (max-width:450px){
+    .nav{
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 20px;
+        height: 100px;
+    }
+
+    
+
+    .nav i{
+        margin-right: 1px;
+    }
+
+    .nav-part2 h5{
+        display: none;
+    }
+
+    #content{
+        
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        
+    }
+
+    .left{
+        width: 100%;
+        /* height: 33%; */
+        padding: 15px 100px;
+
+    }
+
+    .left h1{
+        font-size: 35px;
+    }
+
+    .left button{
+        padding: 10px 40px;
+    }
+
+    .center{
+        width: 100%;
+        height:100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .center-bg{
+       width: 70%; 
+       background-position: 30% 35%;
+    }
+    #content>img{
+        height: 52%;
+        top: 52%;
+        left: 46%;
+    }
+
+   .float-btn{
+      top: 60%;
+      width: 35%;
+   }
+    .right{
+        display: none;
+        width: 100%;
+        
+        padding: 0 100px;
+        
+    }
+
+    #main{
+      
+    }
+} 
+
